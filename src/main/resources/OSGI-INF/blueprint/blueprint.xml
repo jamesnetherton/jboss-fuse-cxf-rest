@@ -63,6 +63,10 @@
           <cxf:features>
             <cxf:logging />
           </cxf:features>
+          <cxf:properties>
+            <!-- Ensure JacksonJsonProvider takes precedence over Jettison -->
+            <entry key="skip.default.json.provider.registration" value="true" />
+          </cxf:properties>
       </cxf:bus>
 
 
